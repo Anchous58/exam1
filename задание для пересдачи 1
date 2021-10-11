@@ -1,0 +1,6 @@
+from pathlib import Path
+a = Path(input('Введите имя файла с расширением')).suffix
+if len(a) != 0:
+    print('Расширение файла - ', a)
+else:
+    print('Ошибка. Введите имя файла с расширением снова.')
