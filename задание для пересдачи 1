@@ -1,7 +1,7 @@
-from pathlib import Path # из библиотеки pathlib импортирум модуль Path
+from pathlib import Path 
 import re
-name = input('Введите имя файла:') # вводим имя файла, записываем в переменную name
-ext = Path(name).suffix # извлекаем из переменной name расширение и записываем в переменную ext
+name = input('Введите имя файла:') 
+ext = Path(name).suffix 
 a = re.match('\.[a-z]+', ext)
 if len(ext) != 0 and a is not None:
 print('Расширение файла: ', ext)
