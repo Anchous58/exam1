@@ -1,4 +1,4 @@
-from pathlib import Path # из библиотеки pathlib импортирум модуль Path
+from pathlib import Path 
 import re
 name = input('Введите имя файла:') 
 ext = Path(name).suffix
